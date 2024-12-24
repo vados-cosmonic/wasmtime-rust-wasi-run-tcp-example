@@ -1,0 +1,8 @@
+[build]
+target = "wasm32-wasip2"
+
+[target."wasm32-wasip1"]
+runner = "wasmtime run -S cli,tcp,inherit-network"
+
+[target."wasm32-wasip2"]
+runner = "wasmtime run -S cli,tcp,inherit-network"
